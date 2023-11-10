@@ -1,0 +1,40 @@
+{
+  "name": "timoshka-lab/laravel-data-transfer-object",
+  "description": "Helper package to map request data to DTO",
+  "keywords": ["timoshka lab", "laravel", "dto", "data transfer object"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Timoshka Lab",
+      "homepage": "https://timoshka-lab.co.jp/"
+    }
+  ],
+  "homepage": "https://github.com/timoshka-lab/laravel-data-transfer-object",
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^8.0|^9.0|^10.0",
+    "illuminate/http": "^8.0|^9.0|^10.0"
+  },
+  "require-dev": {
+    "illuminate/collections": ">=8.0",
+    "orchestra/testbench": "^7.34",
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "TimoshkaLab\\DataTransferObject\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TimoshkaLab\\DataTransferObject\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
